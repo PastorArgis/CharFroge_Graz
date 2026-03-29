@@ -12,7 +12,7 @@ from pathlib import Path
     
 
 CHARACTER = {
-    "name": "Albert",
+    "name": ["Albert", "m"],
     "class": "Penner",
     "level": 1,
     "hp_current": 10,
@@ -122,7 +122,10 @@ name = st.text_input("Name", data["name"])
 job = st.text_input("Klasse", data["class"])
 level = st.number_input("Stufe", 1, 20, data["level"])
 
-st.write(f"{name} ist Level {level} {job}")
+if data[{name}][1] == "m":
+    st.write(f"{data["name"][0]} ist ein Level {level} {job}")
+if data[{name}][1] == "w":
+    st.write(f"{data["name"][0]} ist eine Level {level} {job}")
 
 col1, col2= st.columns(2)
 
