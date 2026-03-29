@@ -180,5 +180,5 @@ with col2:
         st.number_input("Charisma",-10,10, data["stats"]["CHA"])
     
     st.header("Fähigkeiten")
-    st.json(data["skills"])
+    st.write(data["skills"])
     
