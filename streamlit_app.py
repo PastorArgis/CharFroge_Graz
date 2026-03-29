@@ -184,6 +184,6 @@ with col2:
         st.write(f"**{key}:**  \n{value}")
 
     st.header("Kenntnisse")
-    for key, value in data["knowledge"].items():
-        st.write(f"**{key}:**  \n{value}")
-        
+    for key, values in data["knowledge"].items():
+        st.write(f"**{key}:**  \n{', '.join(values)}")
+            
