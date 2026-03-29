@@ -189,16 +189,16 @@ with col2:
     
     st.header("Besitz")        
     st.subheader("**Ausrüstung**")
-    for values in data["property"]["Ausrüstung"].items():
-        st.write(f"{', '.join(values)}")
+    Ausrüstung = data["property"]["Ausrüstung"]
+    st.write(f"{', '.join(Ausrüstung)}")
         
     st.subheader("**Material**")
-    for values in data["property"]["Material"].items():
-        st.write(f"{', '.join(values)}")
+    Material = data["property"]["Material"]
+    st.write(f"{', '.join(Material)}")
         
     st.subheader("**Diverses**")
-    for values in data["property"]["Diverses"].items():
-        st.write(f"{', '.join(values)}")
+    Diverses = data["property"]["Diverses"]
+    st.write(f"{', '.join(Diverses)}")
 
     st.subheader("**Währung**")
     st.write(str(data["property"]["Währung"]))
