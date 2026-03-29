@@ -118,14 +118,14 @@ data = load_character()
 
 st.title("DnD Character Sheet")
 
-name = st.text_input("Name", data["name"])
+name = st.text_input("Name", data["name"][0])
 job = st.text_input("Klasse", data["class"])
 level = st.number_input("Stufe", 1, 20, data["level"])
 
-if data[{name}][1] == "m":
-    st.write(f"{data["name"][0]} ist ein Level {level} {job}")
-if data[{name}][1] == "w":
-    st.write(f"{data["name"][0]} ist eine Level {level} {job}")
+if data["name"][1] == "m":
+    st.write(f"{name} ist ein Level {level} {job}")
+if data["name"][1] == "w":
+    st.write(f"{name} ist eine Level {level} {job}")
 
 col1, col2= st.columns(2)
 
