@@ -1,0 +1,126 @@
+{
+  "name": [
+    "Albert",
+    "m"
+  ],
+  "class": "Penner",
+  "level": 1,
+  "hp_current": 10,
+  "basevals": {
+    "Init": -3,
+    "Ges": 10,
+    "Resis": 10
+  },
+  "stats": {
+    "STÄ": 10,
+    "INT": 9,
+    "WIS": 5,
+    "GES": 4,
+    "KON": 10,
+    "CHA": 7
+  },
+  "multipl": {
+    "STÄ": 0,
+    "INT": -1,
+    "WIS": -2,
+    "GES": -3,
+    "KON": 0,
+    "CHA": -2
+  },
+  "fates": {
+    "STÄ": {
+      "Kraft": 2,
+      "Überlf": 0
+    },
+    "INT": {
+      "Kreat": 1,
+      "Entlarv": -1,
+      "Wahrn": -1,
+      "Nachfor": -1,
+      "Naturk": 1
+    },
+    "WIS": {
+      "Rel": -2,
+      "Gesch": -2,
+      "Med": -4,
+      "Tech": 0,
+      "UmgTiere": 0
+    },
+    "GES": {
+      "Akro": -3,
+      "Verst": -3,
+      "Fingerf": -3
+    },
+    "CHA": {
+      "Überzeug": -2,
+      "Täusch": -2,
+      "Einschüch": -2,
+      "Kunstfert": -2
+    }
+  },
+  "skills": {
+    "Klettern": "+2 Kraft",
+    "Pisslacke": "acid splash",
+    "Zielwasser": "produce flame",
+    "Heiliges Feuer": "sacred flame",
+    "Eins mit dem Park": "drudecraft",
+    "Lallen": "message",
+    "Alkfahne": "Konsum: -2 attack roll",
+    "Revier markieren": "Konsum: difficult terrain",
+    "Feueratem": "note: use D4",
+    "Rasche Flucht": "expeditious retreat",
+    "Ekelhafter Griff": "arms of Hader"
+  },
+  "knowledge": {
+    "Programmieren": [
+      "Matlab",
+      "Python"
+    ],
+    "Sprachen": [
+      "D",
+      "E",
+      "IT",
+      "ES"
+    ],
+    "Dating": [
+      "1: Gegner",
+      "20: Hilfe"
+    ],
+    "Kälteresistenz": ""
+  },
+  "status": {
+    "inspiration": false,
+    "concentrating": false,
+    "poisoned": false,
+    "blinded": false
+  },
+  "property": {
+    "Ausrüstung": [
+      "iphone",
+      "EarPods",
+      "3 USBs",
+      "Kamm",
+      "Schloss",
+      "Kondom: ubk. Datum",
+      "Mikrofasertuch",
+      "ÖBB-Karte",
+      "3 MTG Decks",
+      "McFit-Karte",
+      "BC-Karte",
+      "Bier",
+      "Rucksack",
+      "Jacke",
+      "eCard",
+      "AIDS-Beratungspass"
+    ],
+    "Material": [
+      "+2 Opiate",
+      "3 Pfandflaschen",
+      "Feuerzeug"
+    ],
+    "Diverses": [
+      "2 Gaggi-Sacki"
+    ],
+    "Währung": 423.83
+  }
+}

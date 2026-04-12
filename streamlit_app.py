@@ -214,14 +214,14 @@ name = st.text_input(
     "Name",
     value=data["name"][0],
     key="name_input",
-    on_change=save_character()
+    on_change=save_character
 )
 
 job = st.text_input(
     "Klasse",
     value=data["class"],
     key="class_input",
-    on_change=save_character()
+    on_change=save_character
 )
 
 level = st.number_input(
@@ -230,7 +230,7 @@ level = st.number_input(
     max_value=20,
     value=data["level"],
     key="level_input",
-    on_change=save_character()
+    on_change=save_character
 )
 
 if data["name"][1] == "m":
@@ -244,56 +244,56 @@ with col1:
     st.header("Geschicke")
 
     st.subheader("Stärke")
-    st.number_input("Kraft", -10, 10, data["fates"]["STÄ"]["Kraft"], key="fate_sta_kraft", on_change=save_character())
-    st.number_input("Überleben", -10, 10, data["fates"]["STÄ"]["Überlf"], key="fate_sta_ueberlf", on_change=save_character())
+    st.number_input("Kraft", -10, 10, data["fates"]["STÄ"]["Kraft"], key="fate_sta_kraft", on_change=save_character)
+    st.number_input("Überleben", -10, 10, data["fates"]["STÄ"]["Überlf"], key="fate_sta_ueberlf", on_change=save_character)
 
     st.subheader("Intelligenz")
-    st.number_input("Kreativität", -10, 10, data["fates"]["INT"]["Kreat"], key="fate_int_kreat", on_change=save_character())
-    st.number_input("Entlarvung", -10, 10, data["fates"]["INT"]["Entlarv"], key="fate_int_entlarv", on_change=save_character())
-    st.number_input("Wahrnehmung", -10, 10, data["fates"]["INT"]["Wahrn"], key="fate_int_wahrn", on_change=save_character())
-    st.number_input("Nachforschung", -10, 10, data["fates"]["INT"]["Nachfor"], key="fate_int_nachfor", on_change=save_character())
-    st.number_input("Naturkunde", -10, 10, data["fates"]["INT"]["Naturk"], key="fate_int_naturk", on_change=save_character())
+    st.number_input("Kreativität", -10, 10, data["fates"]["INT"]["Kreat"], key="fate_int_kreat", on_change=save_character)
+    st.number_input("Entlarvung", -10, 10, data["fates"]["INT"]["Entlarv"], key="fate_int_entlarv", on_change=save_character)
+    st.number_input("Wahrnehmung", -10, 10, data["fates"]["INT"]["Wahrn"], key="fate_int_wahrn", on_change=save_character)
+    st.number_input("Nachforschung", -10, 10, data["fates"]["INT"]["Nachfor"], key="fate_int_nachfor", on_change=save_character)
+    st.number_input("Naturkunde", -10, 10, data["fates"]["INT"]["Naturk"], key="fate_int_naturk", on_change=save_character)
 
     st.subheader("Wissen")
-    st.number_input("Religion", -10, 10, data["fates"]["WIS"]["Rel"], key="fate_wis_rel", on_change=save_character())
-    st.number_input("Geschichte", -10, 10, data["fates"]["WIS"]["Gesch"], key="fate_wis_gesch", on_change=save_character())
-    st.number_input("Medizin", -10, 10, data["fates"]["WIS"]["Med"], key="fate_wis_med", on_change=save_character())
-    st.number_input("Technik", -10, 10, data["fates"]["WIS"]["Tech"], key="fate_wis_tech", on_change=save_character())
-    st.number_input("Umgang mit Tieren", -10, 10, data["fates"]["WIS"]["UmgTiere"], key="fate_wis_umgtiere", on_change=save_character())
+    st.number_input("Religion", -10, 10, data["fates"]["WIS"]["Rel"], key="fate_wis_rel", on_change=save_character)
+    st.number_input("Geschichte", -10, 10, data["fates"]["WIS"]["Gesch"], key="fate_wis_gesch", on_change=save_character)
+    st.number_input("Medizin", -10, 10, data["fates"]["WIS"]["Med"], key="fate_wis_med", on_change=save_character)
+    st.number_input("Technik", -10, 10, data["fates"]["WIS"]["Tech"], key="fate_wis_tech", on_change=save_character)
+    st.number_input("Umgang mit Tieren", -10, 10, data["fates"]["WIS"]["UmgTiere"], key="fate_wis_umgtiere", on_change=save_character)
 
     st.subheader("Geschicklichkeit")
-    st.number_input("Akrobatik", -10, 10, data["fates"]["GES"]["Akro"], key="fate_ges_akro", on_change=save_character())
-    st.number_input("Verstohlenheit", -10, 10, data["fates"]["GES"]["Verst"], key="fate_ges_verst", on_change=save_character())
-    st.number_input("Fingerfertigkeit", -10, 10, data["fates"]["GES"]["Fingerf"], key="fate_ges_fingerf", on_change=save_character())
+    st.number_input("Akrobatik", -10, 10, data["fates"]["GES"]["Akro"], key="fate_ges_akro", on_change=save_character)
+    st.number_input("Verstohlenheit", -10, 10, data["fates"]["GES"]["Verst"], key="fate_ges_verst", on_change=save_character)
+    st.number_input("Fingerfertigkeit", -10, 10, data["fates"]["GES"]["Fingerf"], key="fate_ges_fingerf", on_change=save_character)
 
     st.subheader("Charisma")
-    st.number_input("Überzeugungsfähigkeit", -10, 10, data["fates"]["CHA"]["Überzeug"], key="fate_cha_ueberzeug", on_change=save_character())
-    st.number_input("Täuschung", -10, 10, data["fates"]["CHA"]["Täusch"], key="fate_cha_taeusch", on_change=save_character())
-    st.number_input("Einschüchtern", -10, 10, data["fates"]["CHA"]["Einschüch"], key="fate_cha_einschuech", on_change=save_character())
-    st.number_input("Kunstfertigkeit", -10, 10, data["fates"]["CHA"]["Kunstfert"], key="fate_cha_kunstfert", on_change=save_character())
+    st.number_input("Überzeugungsfähigkeit", -10, 10, data["fates"]["CHA"]["Überzeug"], key="fate_cha_ueberzeug", on_change=save_character)
+    st.number_input("Täuschung", -10, 10, data["fates"]["CHA"]["Täusch"], key="fate_cha_taeusch", on_change=save_character)
+    st.number_input("Einschüchtern", -10, 10, data["fates"]["CHA"]["Einschüch"], key="fate_cha_einschuech", on_change=save_character)
+    st.number_input("Kunstfertigkeit", -10, 10, data["fates"]["CHA"]["Kunstfert"], key="fate_cha_kunstfert", on_change=save_character)
 
 with col2:
     st.header("Grundwerte")
     col21, col22, col23 = st.columns(3)
 
     with col21:
-        st.number_input("Initiative", -10, 100, data["basevals"]["Init"], key="base_init", on_change=save_character())
+        st.number_input("Initiative", -10, 100, data["basevals"]["Init"], key="base_init", on_change=save_character)
     with col22:
-        st.number_input("Gesundheit", -10, 100, data["basevals"]["Ges"], key="base_ges", on_change=save_character())
+        st.number_input("Gesundheit", -10, 100, data["basevals"]["Ges"], key="base_ges", on_change=save_character)
     with col23:
-        st.number_input("Resistenz", -10, 100, data["basevals"]["Resis"], key="base_resis", on_change=save_character())
+        st.number_input("Resistenz", -10, 100, data["basevals"]["Resis"], key="base_resis", on_change=save_character)
 
     col24, col25 = st.columns(2)
 
     with col24:
-        st.number_input("Stärke", -10, 10, data["stats"]["STÄ"], key="stat_sta", on_change=save_character())
-        st.number_input("Wissen", -10, 10, data["stats"]["WIS"], key="stat_wis", on_change=save_character())
-        st.number_input("Konstitution", -10, 10, data["stats"]["KON"], key="stat_kon", on_change=save_character())
+        st.number_input("Stärke", -10, 10, data["stats"]["STÄ"], key="stat_sta", on_change=save_character)
+        st.number_input("Wissen", -10, 10, data["stats"]["WIS"], key="stat_wis", on_change=save_character)
+        st.number_input("Konstitution", -10, 10, data["stats"]["KON"], key="stat_kon", on_change=save_character)
 
     with col25:
-        st.number_input("Intelligenz", -10, 10, data["stats"]["INT"], key="stat_int", on_change=save_character())
-        st.number_input("Geschicklichkeit", -10, 10, data["stats"]["GES"], key="stat_ges", on_change=save_character())
-        st.number_input("Charisma", -10, 10, data["stats"]["CHA"], key="stat_cha", on_change=save_character())
+        st.number_input("Intelligenz", -10, 10, data["stats"]["INT"], key="stat_int", on_change=save_character)
+        st.number_input("Geschicklichkeit", -10, 10, data["stats"]["GES"], key="stat_ges", on_change=save_character)
+        st.number_input("Charisma", -10, 10, data["stats"]["CHA"], key="stat_cha", on_change=save_character)
 
     st.header("Fähigkeiten")
     for key, value in data["skills"].items():
